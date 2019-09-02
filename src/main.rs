@@ -10,7 +10,7 @@ use std::sync::{Arc, Mutex};
 
 fn get_arguments() -> ArgMatches<'static> {
     let matches = App::new("MIS Rand")
-        .version("0.1a")
+        .version("0.1.0")
         .author("D. James Skelton <d.j.skelton1@gmail.com>")
         .about("Carries out multiple iterations of generating random MIS and returns the best")
         .arg(
