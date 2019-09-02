@@ -1,0 +1,15 @@
+[package]
+name = "mis"
+version = "0.1.0"
+authors = ["David James Skelton <james.skelton3@googlemail.com>"]
+edition = "2018"
+
+# See more keys and their definitions at https://doc.rust-lang.org/cargo/reference/manifest.html
+
+[dependencies]
+rand = "0.7.0"
+rayon = "1.2.0"
+clap = "2.33.0"
+serde_json = "1.0.40"
+serde = {version = "1.0.99", features=["derive"]}
+
