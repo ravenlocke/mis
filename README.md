@@ -81,6 +81,8 @@ mis -g &lt;edge_list&gt; -n 1000000 -t 4 -s
 ---
 
 ### Examples
+This section will give a few examples of using `mis`, with some speed comparisons to Python. These comparisons are not entirely direct, as all timings of `mis` include the parsing of the edge list, but in Python only the iteration of random maximal independent sets.
+
 #### Trivial example
 Consider a trivial example of a network `A <-> B <-> C`. In this case, the largest maximal independent set is `{A, C}`, 
 and the smallest maximal independent set is `{B}`. We can derive these with `mis` using the edge list in 
@@ -133,6 +135,8 @@ sys	0m0.521s
 ```
 
 Using Python, this took nearer 30 minutes.
+
+---
 
 ### Why is this relevant?
 My field of research is enzyme discovery, and there are two key reasons where this tool would be useful.
