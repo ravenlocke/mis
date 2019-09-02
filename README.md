@@ -99,7 +99,7 @@ The output here is a valid JSON dictionary containing two keys:
 * `size`: the number of members in the largest / smallest maximal independent set.
 
 #### Larger example
-The edge list `examples/test_edgelist.txt` contains 8,989 edges and 1,000 nodes.
+The edge list `examples/test_edgelist.txt` contains 8,989 edges and 1,000 nodes. This was generated using `networkx`'s `gaussian_random_partition` graph with `n = 1000`, `s = 20`, `v=5`, `p_in = 0.7`, and `p_out = 0.0002`.
 
 <pre>
 $ time ./target/release/mis -g test_edgelist.txt -n 1000000 -t 4
