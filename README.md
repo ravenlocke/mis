@@ -118,7 +118,7 @@ sys	0m0.627s
 </pre>
 
 This demonstrates the power of `mis`; the tool is rapid, with 1,000,000 maximal independent networks sampled 
-on a MacBook pro with 2.7 GHz Intel Core i5 in less than two minutes. The equivalent code in Python for this network using `networkx` and `multiprocessing` took 10min 39s. Further, the algorithm for maximum independent set approximation in `networkx` had 94 members, showing an example where a random search is superior.
+on a MacBook pro with 2.7 GHz Intel Core i5 in less than two minutes. The equivalent code in Python for this network using `networkx` and `multiprocessing` took 10m 39s. Further, the algorithm for maximum independent set approximation in `networkx` had 94 members, showing an example where a random search is superior.
 
 #### Random GNM network example
 The edge list `examples/gnm_edgelist.txt` contains 1,000 edges and 1,000 nodes. This was generated using `networkx`'s `gnm_random_graph` function.
@@ -131,4 +131,6 @@ real	1m5.127s
 user	4m13.521s
 sys	0m0.521s
 ```
+
+Using Python, this took nearer 30 minutes.
 
