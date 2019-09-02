@@ -117,5 +117,5 @@ user	5m42.664s
 sys	0m0.627s
 </pre>
 
-This demonstrates the power of `mis`; the tool is rapid (1,000,000 searches on this network completed 
+This demonstrates the power of `mis`; the tool is rapid, with 1,000,000 maximal independent networks sampled 
 on a MacBook pro with 2.7 GHz Intel Core i5 in less than two minutes.
