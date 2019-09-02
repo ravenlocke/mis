@@ -114,7 +114,7 @@ sys	0m0.521s
 ```
 
 This demonstrates the power of `mis`; the tool is rapid, with 1,000,000 maximal independent networks sampled 
-on a MacBook pro with 2.7 GHz Intel Core i5 in less than two minutes. Using Python, this took nearer 30 minutes. Note that this kind of speed increase may not always be seen (depending on graph topology), but nevertheless demonstrates `mis` is capable of being substantially faster. Further, the algorithm for maximum independent set approximation in `networkx` had 94 members, showing an example where a random search is superior. 
+on a MacBook pro with 2.7 GHz Intel Core i5 in less than two minutes. Using Python, multiprocessing over four logical cores, this took nearer 30 minutes. Note that this kind of speed increase may not always be seen (depending on graph topology), but nevertheless demonstrates `mis` is capable of being substantially faster. Further, the algorithm for maximum independent set approximation in `networkx` had 94 members, showing an example where a random search is superior. 
 
 ---
 
