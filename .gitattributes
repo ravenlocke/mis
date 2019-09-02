@@ -1,1 +1,2 @@
-*.rs rust
+* linguist-vendored
+*.rs linguist-vendored=false
