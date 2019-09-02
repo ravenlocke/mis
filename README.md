@@ -14,7 +14,7 @@ If you do use this tool, please cite it (formatting for alternative citation sch
 ## Documentation
 
 ### Installation
-There are two ways to obtain an `mis` installation. 
+There are two ways to obtain a `mis` installation. 
 
 #### Use a pre-compiled binary
 If you are using OSx or a linux x86_64 bit system, then this repository contains pre-compiled binaries 
