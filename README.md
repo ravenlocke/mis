@@ -100,27 +100,6 @@ The output here is a valid JSON dictionary containing two keys:
 * `members`: the members of the largest / smallest maximal independent set.
 * `size`: the number of members in the largest / smallest maximal independent set.
 
-#### Larger example
-The edge list `examples/test_edgelist.txt` contains 8,989 edges and 1,000 nodes. This was generated using `networkx`'s `gaussian_random_partition` graph with `n = 1000`, `s = 20`, `v=5`, `p_in = 0.7`, and `p_out = 0.0002`.
-
-<pre>
-$ time mis -g test_edgelist.txt -n 1000000 -t 4
-{"size":111,"members":["497","443","973","97","531","912","205","740","977","900","367","800","697","810","831","190","923","23","745","796","252","228","589","60","709","821","344","481","355","695","683","425","966","820","986","719","530","323","747","462","388","14","39","287","36","81","117","640","906","649","921","509","93","558","192","280","334","960","134","480","412","30","337","761","896","115","674","70","936","263","797","947","875","407","310","603","147","399","232","437","454","607","19","642","56","597","660","837","985","155","465","914","834","778","438","309","176","872","171","844","284","5","362","239","546","591","788","3","565","713","539"]}
-
-real	1m27.883s
-user	5m43.666s
-sys	0m0.633s
-
-$ time mis -g test_edgelist.txt -n 1000000 -t 4 -s
-{"size":80,"members":["970","231","459","907","714","358","109","435","516","725","977","834","929","268","153","533","60","185","893","746","832","824","392","667","316","855","595","568","244","166","13","671","12","332","431","891","294","143","801","874","993","640","734","678","790","480","641","48","35","612","123","850","301","511","408","777","282","702","356","546","470","693","785","85","936","574","381","338","701","481","955","764","200","16","258","34","598","735","539","101"]}
-
-real	1m27.940s
-user	5m42.664s
-sys	0m0.627s
-</pre>
-
-This demonstrates the power of `mis`; the tool is rapid, with 1,000,000 maximal independent networks sampled 
-on a MacBook pro with 2.7 GHz Intel Core i5 in less than two minutes. The equivalent code in Python for this network using `networkx` and `multiprocessing` took 10m 39s. Further, the algorithm for maximum independent set approximation in `networkx` had 94 members, showing an example where a random search is superior.
 
 #### Random GNM network example
 The edge list `examples/gnm_edgelist.txt` contains 1,000 edges and 1,000 nodes. This was generated using `networkx`'s `gnm_random_graph` function.
@@ -134,7 +113,8 @@ user	4m13.521s
 sys	0m0.521s
 ```
 
-Using Python, this took nearer 30 minutes.
+This demonstrates the power of `mis`; the tool is rapid, with 1,000,000 maximal independent networks sampled 
+on a MacBook pro with 2.7 GHz Intel Core i5 in less than two minutes. Using Python, this took nearer 30 minutes. Note that this kind of speed increase may not always be seen (depending on graph topology), but nevertheless demonstrates `mis` is capable of being substantially faster. Further, the algorithm for maximum independent set approximation in `networkx` had 94 members, showing an example where a random search is superior. 
 
 ---
 
