@@ -47,10 +47,6 @@ sudo mv ./target/release/mis /usr/bin
 mis --help
 </pre>
 
-This will create a folder, `target/release/`, containing the compiled `mis` binary. 
-
-Note that neither **installation methods put `mis` on the `PATH`**. 
-
 ---
 
 ### Usage
