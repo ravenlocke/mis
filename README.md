@@ -122,9 +122,10 @@ on a MacBook pro with 2.7 GHz Intel Core i5 in less than two minutes. Using Pyth
 ---
 
 ### Why is this relevant?
-My field of research is enzyme discovery, and there are two key reasons where this tool would be useful.
+My field of research is enzyme discovery, and there are two situations where this tool would be useful.
 
-#### Enzyme discovery
+#### Building a commercial portfolio
 Commercially, intellectual property on enzymes is often subject to restrictions on how similar they are (known as identity). If we represent this as a network, where two nodes are connected when they share identity ≥ a given threshold, then building the largest portfolio possible is equivalent to searching for the maximum independent set. While this problem remains intractable, using a tool such as `mis` will help build as substantial a portfolio as possible.
 
-Another use would be when testing the properties of a set of enzymes. In this instance, we could rationalise that we want an independent set to test, but the smallest one in which the whole network is represented. Thus, using `mis` with the `-s` flag would give a small maximal independent set that achieves this.
+#### Testing a sample of enzymes from sequence space
+Another use would be when testing the properties of a set of *enzymes*. In this instance, again, we can connect two nodes in a network when they share identity ≥ a given threshold where their acctivity would be likely to be highly similar. We could then obtain an independent set to test, but the smallest one in which the whole network is represented. Thus, using `mis` with the `-s` flag would give a small maximal independent set that achieves this.
