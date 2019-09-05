@@ -7,9 +7,7 @@ or (2) as few members as possible. The rest of this document will go into how to
 
 If you do use this tool, please support us by citing the initial release:
 
-> David J. Skelton. (2019, September 2). mis (Version 0). Zenodo. http://doi.org/10.5281/zenodo.3384133
-
-
+> David J. Skelton. (2019, September 2). mis: Random search for maximal independent sets (Version 0). Zenodo. http://doi.org/10.5281/zenodo.3384133
 
 
 ## Documentation
