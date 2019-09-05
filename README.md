@@ -1,13 +1,13 @@
-[![DOI](https://zenodo.org/badge/DOI/10.5281/zenodo.3384133.svg)](https://doi.org/10.5281/zenodo.3384133)
+[![DOI](https://zenodo.org/badge/DOI/10.5281/zenodo.3384132.svg)](https://doi.org/10.5281/zenodo.3384132)
 
 # mis: Random search for maximal independent sets
 `mis` is a tool for finding maximal independent sets with either (1) as many members as possible, 
 or (2) as few members as possible. The rest of this document will go into how to install and use
 `mis`, as well as giving some example use-cases where this is useful. 
 
-If you do use this tool, please cite it (formatting for alternative citation schemes can be found [here](https://doi.org/10.5281/zenodo.3384133)):
+If you do use this tool, please cite it (formatting for alternative citation schemes can be found [here](https://doi.org/10.5281/zenodo.3384132)):
 
-> David J. Skelton. (2019, September 2). mis (Version 0.1.0). Zenodo. http://doi.org/10.5281/zenodo.3384133
+> David J. Skelton. (2019, September 2). mis. Zenodo. http://doi.org/10.5281/zenodo.3384132
 
 
 ## Documentation
